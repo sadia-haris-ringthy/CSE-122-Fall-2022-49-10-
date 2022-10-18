@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int w,p;
+    
+    cout<<"Enter the weigh of the watermelon in positive integer:";
+    cin>>w;
+    if(1<=w<=100)
+    {
+        if(w%2==0)
+        {
+            p=w/2;
+            if(p%2==0)
+            {
+                cout<<"YES, if the boys can divide the watermelon into two parts, each of them weighing even number of kilos.";
+            }
+            else
+            {
+                cout<<"NO.";
+            }
+        }
+    }
+    return 0;
+}
